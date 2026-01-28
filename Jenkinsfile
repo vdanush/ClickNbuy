@@ -8,11 +8,8 @@ pipeline{
             steps {
                sh 'mvn clean package'
            }
-          stage('Run App') {
-    steps {
-        sh 'nohup java -jar target/*.jar &'
-    }
-   }
+          
+  
   }
  }
 }
